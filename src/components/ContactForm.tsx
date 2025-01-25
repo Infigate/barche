@@ -47,7 +47,7 @@ const ContactForm: React.FC = () => {
   return (
     <div className="container my-5">
       <div className="row justify-content-center">
-        <div className="col-8 mb-5">
+        <div className="col-12 col-md-8 mb-5">
           <img src={logoCircle} alt="Service Image" className="d-block mx-auto mb-3" />
           <form onSubmit={handleSubmit} className="p-4 border rounded">
             <div className="mb-3">

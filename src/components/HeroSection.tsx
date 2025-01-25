@@ -14,7 +14,7 @@ const HeroSection: React.FC = () => {
             {'> BarchE / % echo "arch" | sed "s/^/b/; s/\\$/e/"'}
           </p>
           <img src={sushi} alt="Sushi" className="sushi-image" />
-          <img src={rocket} alt="Rocket" className="rocket-image" />
+          <img src={rocket} alt="Rocket" className="rocket-image hover-float" />
         </div>
 
         {/* 右カラム */}

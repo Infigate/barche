@@ -98,9 +98,27 @@ body, html, #root {
   position: absolute;
   top: 75%;
   right: 45%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); /* 基本位置の調整 */
   width: 200px;
   height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.rocket-image:hover {
+  animation: float 2s infinite ease-in-out;
+}
+
+/* アニメーションの定義 */
+@keyframes float {
+  0% {
+    transform: translate(-50%, -50%) translateY(0); /* 基本位置を維持 */
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(-15px); /* 上に移動 */
+  }
+  100% {
+    transform: translate(-50%, -50%) translateY(0); /* 元の位置に戻る */
+  }
 }
 
 .japan-image {
@@ -129,6 +147,24 @@ body, html, #root {
   font-weight: bold;
   color: rgba(255, 255, 255, 0.8);
   text-align: right;
+  text-shadow: 0 0 2px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff, 0 0 80px #0ff;
+  animation: neonBlink 1.5s infinite alternate;
+}
+
+/* チカチカ光るアニメーション */
+@keyframes neonBlink {
+  0% {
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff, 0 0 80px #0ff;
+    color: #0ff;
+  }
+  50% {
+    text-shadow: 0 0 2px #0ff, 0 0 4px #0ff, 0 0 8px #0ff, 0 0 16px #0ff, 0 0 32px #0ff;
+    color: #00f;
+  }
+  100% {
+    text-shadow: 0 0 5px #f0f, 0 0 10px #f0f, 0 0 20px #f0f, 0 0 40px #f0f, 0 0 80px #f0f;
+    color: #f0f;
+  }
 }
 
 @media (max-width: 768px) {
