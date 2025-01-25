@@ -8,7 +8,7 @@ const Header: React.FC = () => {
         <img src={logo} alt="Logo" className="logo-image" />
       </div>
 
-      <div className="header-right">
+      <div className="header-right align-items-center">
         <nav>
           <ul className="nav-list d-flex px-3 mb-0">
             <li><a href="#about" className="nav-link">About Us</a></li>

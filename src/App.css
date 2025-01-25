@@ -204,6 +204,17 @@ body, html, #root {
   padding-top: 8rem;
 }
 
+/* モバイルデバイス用のスタイルを上書き */
+@media (max-width: 768px) {
+  .about-section {
+    height: auto; /* 高さを自動調整 */
+  }
+
+  .service-section {
+    padding-top: 0; /* パディングをリセット */
+  }
+}
+
 .btn-custom {
   background: linear-gradient(90deg, #007bff, #6610f2);
   border: none;
