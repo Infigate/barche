@@ -5,7 +5,7 @@ const Header: React.FC = () => {
   return (
     <header className="header d-flex align-items-center justify-content-between fixed-top bg-white shadow">
       <div className="header-left">
-        <img src={logo} alt="Logo" className="logo-image" />
+        <a href="#top"><img src={logo} alt="Logo" className="logo-image" /></a>
       </div>
 
       <div className="header-right align-items-center">

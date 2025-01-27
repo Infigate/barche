@@ -5,13 +5,13 @@ import work from '../assets/ele/work.svg';
 
 const About: React.FC = () => {
   return (
-    <>
+    <div id="about">
       <div className="container-fluid about-section align-items-center position-relative">
         <div className="row bg-black">
           <div className="col-md-9 text-center p-5 bg-white">
             <img src={barche} alt="Sample" className="d-block mx-auto mb-3 img-fluid" />
             <p className="h4 dot-font text-black">{'[Bridge the Business & Entertainment]'}</p>
-            <img src={oji} alt="Sample" className="d-block mx-auto mb-3 about-img" />
+            <img src={oji} alt="Sample" className="mx-auto mb-3 about-img" />
           </div>
         </div>
       </div>
@@ -19,7 +19,7 @@ const About: React.FC = () => {
       <div className="container-fluid about-section align-items-center position-relative">
         <div className="row bg-black">
           <div className="col-12 text-center text-white">
-            <div className="text-content dot-font">
+            <div className="text-content dot-font my-5">
               <h2 className="h3">Creating New Norms</h2>
               <p className="h4 mb-5">Providing a Platform to Infinitely Expand Business and Entertainment</p>
               <p className="h4 mb-2">• Creativity</p>
@@ -35,12 +35,12 @@ const About: React.FC = () => {
 
       <div className="container-fluid about-section align-items-center position-relative">
         <div className="row bg-black justify-content-center">
-          <div className="col-8 text-white">
+          <div className="col-12 col-md-8 text-white">
             <img src={work} alt="Sample" className="d-block mx-auto mb-5 w-100" />
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

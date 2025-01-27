@@ -6,7 +6,7 @@ import empty from '../assets/ele/empty.png';
 
 const HeroSection: React.FC = () => {
   return (
-    <div className="container-fluid hero-section align-items-center">
+    <div className="container-fluid hero-section align-items-center" id="top">
       <div className="row">
         {/* 左カラム */}
         <div className="col-md-6 text-center text-md-start p-5">
