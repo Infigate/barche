@@ -8,6 +8,7 @@ const Location: React.FC = () => {
         {/* 左半分: 住所 */}
         <div className="col-md-6 d-flex flex-column justify-content-center">
           <h2 className="mb-3">BarchE Inc.</h2>
+          <p>CEO Hayato Nagano</p>
           <p>3-20, Tsukisamu Higashi 3-jo 7-chome</p>
           <p>Toyohira-ku, Sapporo, Hokkaido</p>
           <p>062-0053, Japan</p>
